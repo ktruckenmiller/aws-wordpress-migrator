@@ -8,3 +8,4 @@ steps:
     settings:
       repo: ktruckenmiller/ecs-wordpress-migrator
       context: deployment
+      dockerfile: deployment/Dockerfile
