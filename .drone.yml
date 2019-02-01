@@ -6,6 +6,8 @@ steps:
 - name: docker
   image: plugins/ecr
   settings:
+    dockerfile: deployment/Dockerfile
+    context: deployment
     repo: 601394826940.dkr.ecr.us-west-2.amazonaws.com/ecs-wordpress-migrator
     region: us-west-2
     tags:
