@@ -9,3 +9,7 @@ steps:
       repo: ktruckenmiller/ecs-wordpress-migrator
       context: deployment
       dockerfile: deployment/Dockerfile
+      username:
+        from_secret: username
+      password:
+        from_secret: password
