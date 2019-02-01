@@ -1,0 +1,13 @@
+---
+kind: pipeline
+name: wordpress-docker
+
+steps:
+- name: docker
+  image: plugins/ecr
+  settings:
+    repo: 601394826940.dkr.ecr.us-west-2.amazonaws.com/indietools
+    region: us-west-2
+    tags:
+      - latest
+      - ${DRONE_COMMIT}

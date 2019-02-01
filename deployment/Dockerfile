@@ -1,0 +1,1 @@
+FROM ktruckenmiller/ansible
