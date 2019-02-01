@@ -7,4 +7,4 @@ steps:
     image: plugins/docker
     settings:
       repo: ktruckenmiller/ecs-wordpress-migrator
-      
+      context: deployment
